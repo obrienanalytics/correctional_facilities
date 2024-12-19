@@ -11,7 +11,7 @@ GO
 
 --Please note, I have provide the files dbo.cor_facilities.csv, dbo.state_population.csv, and dbo.suicide.csv to import.--
 
---Before we begin, let's get familiar with the three datasets we will be using for this project.--
+--Before we begin, let's get familiar with the three datasets we will be using for this project!--
 
 --The first one has correctional facility data for the entire United States, including names of the facilities, addresses, population and capacity numbers, and much more!--
 SELECT *
