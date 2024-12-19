@@ -9,7 +9,7 @@ GO
 USE testdb;
 GO
 
---Next, please import the files dbo.cor_facilities.csv, dbo.state_population.csv, and dbo.suicide.csv from this Github respository.--
+--Please import the files dbo.cor_facilities.csv, dbo.state_population.csv, and dbo.suicide.csv from this Github respository!--
 --You will also want to double check your schemas are the same as this script. I have included a detailed_setup.sql script for more advanced users, but that is unncessary to just view this project.--
 
 /*       */	
