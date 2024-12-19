@@ -1,5 +1,16 @@
 /*Hello everyone! Welcome to my SQL Project "Correctional Facilities in the United States and Suicide". Please note this is optimized for Microsoft SQL Server. -David O'Brien*/ 
 
+--First, let's create the database testdb if it doesn't already exist --
+IF DB_ID('testdb') IS NULL
+    CREATE DATABASE testdb;
+GO
+
+--Switch to the newly created database--
+USE testdb;
+GO
+
+--Please note, I have provide the files dbo.cor_facilities.csv, dbo.state_population.csv, and dbo.suicide.csv to import.--
+
 --Before we begin, let's get familiar with the three datasets we will be using for this project.--
 
 --The first one has correctional facility data for the entire United States, including names of the facilities, addresses, population and capacity numbers, and much more!--
