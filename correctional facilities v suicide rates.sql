@@ -10,7 +10,9 @@ USE testdb;
 GO
 
 --Next, please import the files dbo.cor_facilities.csv, dbo.state_population.csv, and dbo.suicide.csv from this Github respository.--
---You will also want to double check your schemas are the same as this script.--
+--You will also want to double check your schemas are the same as this script. I have included a detailed_setup.sql script for more advanced users, but that is unncessary to just view this project.--
+
+/*       */	
 
 --Before we begin our analysis, let's get familiar with the three datasets we will be using for this project!--
 
@@ -94,7 +96,7 @@ WHERE a.cap_cleaned IS NOT NULL AND b.pop_cleaned > 0
 GROUP BY b.state_abbreviation
 ORDER BY capacity_population_ratio;
 
---We can see that Hawaii, Wisconsin, Kentucky, Virginia, Tennesse, Montana and South Carolina are all over utilizing their correctional facilities!--
+--We can see that Hawaii, Wisconsin, Kentucky, Virginia, Tennessee, Montana and South Carolina are all over utilizing their correctional facilities!--
 --Washington DC, Utah, Nebraska, Georgia and North Dakota have the most amount of available space, comparative to their need.--
 
 
@@ -132,7 +134,7 @@ GROUP BY a.state, a.state_abbreviation
 ORDER BY avg_suicides_per_year DESC;
 
 --I'd like to know if there are any correlation between these numbers.--
---However, these numbers alone aren't statistically signficant enough to determine a proper correlation, because each state has a different population. Because of this, we will now calculate correctional facility rates and suicide rates based on another table that has population data.--
+--However, these numbers alone aren't statistically significant enough to determine a proper correlation, because each state has a different population. Because of this, we will now calculate correctional facility rates and suicide rates based on another table that has population data.--
 
 
 SELECT 
