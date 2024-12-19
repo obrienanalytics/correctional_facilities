@@ -1,4 +1,4 @@
-/*Hello everyone! Welcome to my SQL Project "Correctional Facilities in the United States and Suicide". Please note this is optimized for Microsoft SQL Server. -David O'Brien*/ 
+/*Hello everyone! Welcome to my SQL Project "Correctional Facilities in the United States". Please note this is optimized for Microsoft SQL Server. -David O'Brien*/ 
 
 --First, let's create the database testdb if it doesn't already exist. --
 IF DB_ID('testdb') IS NULL
